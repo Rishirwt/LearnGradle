@@ -1,6 +1,7 @@
 package Sale;
 
 import com.google.gson.Gson;
+import info.garage.JsonDisplay;
 
 public class SaleEvent {
     private String id;
@@ -42,8 +43,7 @@ public class SaleEvent {
         event.setStreetAddress("123 Main St.");
         event.setCity("London");
         System.out.println(event.toString());
-        Gson gson =new Gson();
-        String json=gson.toJson(event);
-        System.out.println(json);
+
+        JsonDisplay.showJson(event);
     }
 }
