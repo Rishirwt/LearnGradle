@@ -22,3 +22,26 @@ dependencies {
 apply plugin:'project-report'
 
 buildDir ="mybuild"
+
+
+//task showDate{
+//    dependsOn build
+//    group ="my tasks"
+//    description ="show current date"
+//    doLast{
+//        println ""
+//        println 'Current date: ' +new Date()
+//        println ""
+//    }
+//}
+//
+//class ShowDate extends DefaultTask
+//{
+//    String dateMessage="Date is : "
+//    @TaskAction
+//    void showDate(){
+//        println dateMessage+ new Date()
+//    }
+//}
+//
+//task showDate(type: ShowDate)
